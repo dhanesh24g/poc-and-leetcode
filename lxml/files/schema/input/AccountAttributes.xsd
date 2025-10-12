@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns="http://www.tibco.com/schemas/TIBCO_BW_REST_EXAMPLE/Schemas/Schema.xsd"
+	 targetNamespace="http://www.tibco.com/schemas/TIBCO_BW_REST_EXAMPLE/Schemas/Schema.xsd"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="AcctDetails">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="RecordIndicator" type="xs:string"/>
+				<xs:element name="CustomerID" type="xs:string"/>
+				<xs:element name="AcctNumber" type="xs:string"/>
+				<xs:element name="TxnID" type="xs:string"/>
+				<xs:element name="TxnTypeCode" type="xs:string" minOccurs="0"/>
+				<xs:element name="TxnAmount" type="xs:decimal"/>
+				<xs:element name="Currency" type="xs:string"/>
+				<xs:element name="TxnDate" type="xs:string"/>
+				<xs:element name="TxnTime" type="xs:string"/>
+				<xs:element name="BranchID" type="xs:string" minOccurs="0"/>
+				<xs:element name="ChannelType" type="xs:string" minOccurs="0"/>
+				<xs:element name="StatusCode" type="xs:string" minOccurs="0"/>
+				<xs:element name="RefNumber" type="xs:string" minOccurs="0"/>
+				<xs:element name="CurrentBalance" type="xs:decimal"/>
+				<xs:element name="ProcessDate" type="xs:string"/>
+				<xs:element name="MerchantCode" type="xs:string" minOccurs="0"/>
+				<xs:element name="AuthCode" type="xs:string" minOccurs="0"/>
+				<xs:element name="FeeAmount" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="ExchangeRate" type="xs:decimal" minOccurs="0"/>
+				<xs:element name="Filler" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

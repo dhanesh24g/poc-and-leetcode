@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns="http://www.tibco.com/schemas/TIBCO_BW_REST_EXAMPLE/Schemas/Schema.xsd"
+	 targetNamespace="http://www.tibco.com/schemas/TIBCO_BW_REST_EXAMPLE/Schemas/Schema.xsd"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+
+	<!-- Global Element Type Definitions -->
+	<xs:element name="ExchangeRate" type="xs:decimal"/>
+	<xs:element name="AcctNumber" type="xs:string"/>
+	<xs:element name="AmountType" type="xs:decimal"/>
+	<xs:element name="IdType" type="xs:string"/>
+
+	<!-- Global Element Definitions -->
+	<xs:element name="TxnInfo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="IdType"/>
+				<xs:element ref="AmountType"/>
+				<xs:element ref="AcctNumber"/>
+				<xs:element name="Currency" type="xs:string"/>
+				<xs:element name="TxnDate" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="BranchInfo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="IdType" minOccurs="0"/>
+				<xs:element name="ChannelType" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Main Element using refs -->
+	<xs:element name="AcctDetails">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="RecordIndicator" type="xs:string"/>
+				<xs:element ref="IdType"/>
+				<xs:element ref="AcctNumber"/>
+				<xs:element ref="TxnInfo"/>
+				<xs:element name="TxnTypeCode" type="xs:string" minOccurs="0"/>
+				<xs:element name="TxnTime" type="xs:string"/>
+				<xs:element ref="BranchInfo"/>
+				<xs:element name="StatusCode" type="xs:string" minOccurs="0"/>
+				<xs:element name="RefNumber" type="xs:string" minOccurs="0"/>
+				<xs:element ref="AmountType"/>
+				<xs:element name="ProcessDate" type="xs:string"/>
+				<xs:element name="MerchantCode" type="xs:string" minOccurs="0"/>
+				<xs:element name="AuthCode" type="xs:string" minOccurs="0"/>
+				<xs:element ref="AmountType" minOccurs="0"/>
+				<xs:element ref="ExchangeRate" minOccurs="0"/>
+				<xs:element name="Filler" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
