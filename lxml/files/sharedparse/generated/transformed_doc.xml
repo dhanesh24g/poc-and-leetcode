@@ -1,0 +1,52 @@
+<BWSharedResource>
+    <name>GetAccountSchema</name>
+    <resourceType>ae.shared.ParseSharedResource</resourceType>
+    <config>
+        <FormatType>Fixed format</FormatType>
+        <ColumnSeparator>,</ColumnSeparator>
+        <ColSeparatorRule>Treat all characters as entered as a single column separator string</ColSeparatorRule>
+        <LineSeparator>&#13;</LineSeparator>
+        <FillCharacter>Space</FillCharacter>
+        <LineLength>200</LineLength>
+        <OffsetString>RecordType(0,1)
+AccountNumber(1,18)
+TransactionId(18,38)
+TransactionDate(38,46)
+TransactionTime(46,52)
+TransactionType(52,55)
+TransactionAmount(55,70)
+CurrencyCode(70,73)
+BranchCode(73,79)
+ChannelCode(79,82)
+CustomerId(82,94)
+TransactionStatus(94,95)
+ReferenceNumber(95,120)
+AvailableBalance(120,135)
+ProcessingDate(135,143)
+Reserved(143,200)</OffsetString>
+        <DataFormat>
+            <element name="Format">
+                <complexType>
+                    <sequence>
+                        <element name="RecordType" type="xsd:string"/>
+                        <element name="AccountNumber" type="xsd:string"/>
+                        <element name="TransactionId" type="xsd:string"/>
+                        <element name="TransactionDate" type="xsd:string"/>
+                        <element name="TransactionTime" type="xsd:string"/>
+                        <element name="TransactionType" type="xsd:string"/>
+                        <element name="TransactionAmount" type="xsd:decimal"/>
+                        <element name="CurrencyCode" type="xsd:string"/>
+                        <element name="BranchCode" type="xsd:string"/>
+                        <element name="ChannelCode" type="xsd:string"/>
+                        <element name="CustomerId" type="xsd:string"/>
+                        <element name="TransactionStatus" type="xsd:string"/>
+                        <element name="ReferenceNumber" type="xsd:string"/>
+                        <element name="AvailableBalance" type="xsd:decimal"/>
+                        <element name="ProcessingDate" type="xsd:string"/>
+                        <element name="Reserved" type="xsd:string" minOccurs="0"/>
+                    </sequence>
+                </complexType>
+            </element>
+        </DataFormat>
+    </config>
+</BWSharedResource>
