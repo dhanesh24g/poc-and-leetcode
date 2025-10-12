@@ -1,0 +1,28 @@
+{
+    "name": "GetAccountSchema",
+    "length": "200",
+    "values": {
+        "1": [
+            "RecordType(0,1)",
+            "AccountNumber(1,18)",
+            "TransactionId(18,38)",
+            "TransactionDate(38,46)",
+            "TransactionTime(46,52)",
+            "TransactionType(52,55)"
+        ],
+        "2": [
+            "TransactionAmount(55,70)",
+            "CurrencyCode(70,73)",
+            "BranchCode(73,79)",
+            "ChannelCode(79,82)",
+            "CustomerId(82,94)",
+            "TransactionStatus(94,95)"
+        ],
+        "3": [
+            "ReferenceNumber(95,120)",
+            "AvailableBalance(120,135)",
+            "ProcessingDate(135,143)",
+            "Reserved(143,200)"
+        ]
+    }
+}

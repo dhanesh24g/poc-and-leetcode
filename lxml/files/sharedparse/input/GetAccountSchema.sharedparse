@@ -6,8 +6,7 @@
         <FormatType>Fixed format</FormatType>
         <ColumnSeparator>,</ColumnSeparator>
         <ColSeparatorRule>Treat all characters as entered as a single column separator string</ColSeparatorRule>
-        <LineSeparator>&#xD;
-</LineSeparator>
+        <LineSeparator>&#xD;</LineSeparator>
         <FillCharacter>Space</FillCharacter>
         <LineLength>200</LineLength>
         <OffsetString>RecordType(0,1)
