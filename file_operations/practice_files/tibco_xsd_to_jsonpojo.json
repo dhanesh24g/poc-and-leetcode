@@ -50,7 +50,7 @@
     "xs:complexType": "Indicates a complex object requiring class generation",
     "xs:sequence": "Maps to ordered fields in the Java class",
     "xs:element_nested": "Individual fields converted to camelCase naming",
-    "minOccurs": "Determines field nullability and validation annotations",
+    "minOccurs": "Determines field nullability and validation annotations"
   },
   "special_considerations": [
     "minOccurs='0' fields are nullable, but others require @NotNull",
