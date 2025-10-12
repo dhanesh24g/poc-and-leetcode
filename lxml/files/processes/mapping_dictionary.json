@@ -1,0 +1,18 @@
+{
+    "AcctDetails/RecordIndicator": "$var/RecordType",
+    "AcctDetails/CustomerID": "$var/CustomerId",
+    "AcctDetails/AcctNumber": "$var/AccountNumber",
+    "AcctDetails/TxnID": "$var/TransactionId",
+    "AcctDetails/TxnTypeCode": "$var/TransactionType",
+    "AcctDetails/TxnAmount": "$var/TransactionAmount",
+    "AcctDetails/Currency": "$var/CurrencyCode",
+    "AcctDetails/TxnDate": "$var/TransactionDate",
+    "AcctDetails/TxnTime": "$var/TransactionTime",
+    "AcctDetails/BranchID": "$var/BranchCode",
+    "AcctDetails/ChannelType": "$var/ChannelCode",
+    "AcctDetails/StatusCode": "$var/TransactionStatus",
+    "AcctDetails/CurrentBalance": "$var/AvailableBalance",
+    "AcctDetails/ProcessDate": "$var/ProcessingDate",
+    "AcctDetails/AuthCode": "OAuth",
+    "AcctDetails/FeeAmount": "0"
+}
