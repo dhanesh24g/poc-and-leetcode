@@ -1,0 +1,117 @@
+{
+    "AcctDetails": {
+        "type": "complexType",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/RecordIndicator": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/IdType": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/AcctNumber": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/TxnInfo": {
+        "type": "complexType",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/TxnInfo/IdType": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/TxnInfo/AmountType": {
+        "type": "xs:decimal",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/TxnInfo/AcctNumber": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/TxnInfo/Currency": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/TxnInfo/TxnDate": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/TxnTypeCode": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/TxnTime": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/BranchInfo": {
+        "type": "complexType",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/BranchInfo/IdType": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/BranchInfo/ChannelType": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/StatusCode": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/RefNumber": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/AmountType": {
+        "type": "xs:decimal",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/ProcessDate": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/MerchantCode": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/AuthCode": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/ExchangeRate": {
+        "type": "xs:decimal",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/Filler": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    }
+}
