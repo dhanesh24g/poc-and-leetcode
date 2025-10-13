@@ -1,0 +1,107 @@
+{
+    "AcctDetails": {
+        "type": "complexType",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/RecordIndicator": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/CustomerID": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/AcctNumber": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/TxnID": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/TxnTypeCode": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/TxnAmount": {
+        "type": "xs:decimal",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/Currency": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/TxnDate": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/TxnTime": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/BranchID": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/ChannelType": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/StatusCode": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/RefNumber": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/CurrentBalance": {
+        "type": "xs:decimal",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/ProcessDate": {
+        "type": "xs:string",
+        "minOccurs": "1",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/MerchantCode": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/AuthCode": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/FeeAmount": {
+        "type": "xs:decimal",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/ExchangeRate": {
+        "type": "xs:decimal",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    },
+    "AcctDetails/Filler": {
+        "type": "xs:string",
+        "minOccurs": "0",
+        "maxOccurs": "1"
+    }
+}
