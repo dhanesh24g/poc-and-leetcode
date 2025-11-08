@@ -57,14 +57,12 @@ def analyze_transactions(transactions: List[Dict]) -> Dict:
         print(consecutive_customers)
 
         # Convert string dates to datetime.date objects for return
-        daily_averages_converted = {datetime.strptime(k, '%Y-%m-%d').date(): v for k, v in days.items()}
 
         # IMPORTANT: Add return statement
         return {
             'top_customers': top_3_dict,
             'popular_category': popular_category,
-            'daily_averages': daily_averages_converted,
-            'consecutive_customers': consecutive_customers
+            'average_transaction_daily': days
         }
 
     except Exception as e:
