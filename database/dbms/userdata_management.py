@@ -1,4 +1,4 @@
-from . import supabase_connection as supabase
+import supabase_connection as supabase
 
 
 class UserDataManagement:
